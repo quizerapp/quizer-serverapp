@@ -12,9 +12,9 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Options {
-	
+
 	private String optionData;
-	private  double score;
+	private double score;
 	private boolean isCorrectAnswer;
 
 }

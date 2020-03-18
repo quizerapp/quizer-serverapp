@@ -21,7 +21,7 @@ import lombok.ToString;
 @Builder
 @ToString
 public class QuestionDTO {
-	
+
 	private String id;
 	private String questionData;
 	private List<Options> options;
@@ -34,5 +34,5 @@ public class QuestionDTO {
 	private String author;
 	private LocalDateTime createdAt;
 	private LocalDateTime updatedAt;
-	
+
 }

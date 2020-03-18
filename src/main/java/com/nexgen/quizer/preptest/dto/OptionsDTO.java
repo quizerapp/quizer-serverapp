@@ -13,6 +13,6 @@ import lombok.Setter;
 @Builder
 public class OptionsDTO {
 	private String optionData;
-	private  double score;
+	private double score;
 	private boolean isCorrectAnswer;
 }

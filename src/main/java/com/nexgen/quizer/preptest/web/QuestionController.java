@@ -21,8 +21,8 @@ public class QuestionController {
 	private QuestionService questionService;
 
 	@PostMapping("{testid}/addquestion")
-	public QuestionDTO addQuestion(@PathVariable("testid") String testId,@RequestBody QuestionDTO questionDTO) {
-		log.info("{}",questionDTO);
+	public QuestionDTO addQuestion(@PathVariable("testid") String testId, @RequestBody QuestionDTO questionDTO) {
+		log.info("{}", questionDTO);
 		questionDTO = questionService.addQuestion(questionDTO, testId);
 		log.info("Question is added to the test :{} with id :{}", testId, questionDTO.getId());
 		return questionDTO;

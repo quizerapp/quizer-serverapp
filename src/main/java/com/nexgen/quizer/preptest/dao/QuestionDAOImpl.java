@@ -10,7 +10,7 @@ import com.nexgen.quizer.preptest.repo.QuestionRepo;
 
 @Repository
 public class QuestionDAOImpl implements QuestionDAO {
-	
+
 	@Autowired
 	private QuestionRepo questionRepo;
 
@@ -21,7 +21,6 @@ public class QuestionDAOImpl implements QuestionDAO {
 
 	@Override
 	public List<Question> getQuestions(String testId) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 

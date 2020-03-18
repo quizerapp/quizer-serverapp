@@ -17,7 +17,6 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-
 @Getter
 @Setter
 @Builder
@@ -34,13 +33,14 @@ public class Question implements AuditorAware<String> {
 	private double score;
 	private String topicName;
 	private String imagePath;
-	
+
 	@CreatedBy
 	private String author;
 	@CreatedDate
 	private LocalDateTime createdAt;
 	@LastModifiedDate
 	private LocalDateTime updatedAt;
+
 	@Override
 	public Optional<String> getCurrentAuditor() {
 		// Should get from security context
